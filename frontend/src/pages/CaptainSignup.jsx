@@ -16,7 +16,7 @@ const Captainsignup = () => {
           firstname:firstName,
           lastName:lastName,
         },
-          emailL:email,
+          email:email,
           password:password
       })
       setEmail('')
@@ -30,8 +30,8 @@ const Captainsignup = () => {
     <div>
     <img className='w-20 mb-2' src="https://www.svgrepo.com/show/505031/uber-driver.svg" alt="" />
     <form onSubmit={(e)=>{submitHandler(e)}}>
-      <h3 className='text-lg font-medium mb-2'>What's your name</h3>
-      <div className='flex gap-4 mb-6'>
+      <h3 className='text-lg font-medium mb-2 w-full'>What's our Captain's name</h3>
+      <div className='flex gap-4 mb-7'>
       <input 
       className='bg-[#eeeeee] w-1/2  rounded px-4 py-2 border  text-lg placeholder:text-base'
       type="text"
@@ -45,7 +45,7 @@ const Captainsignup = () => {
       onChange={(e)=>setLastName(e.target.value)}  
       placeholder='Last name' required />
       </div>
-      <h3 className='text-lg font-medium mb-2'>What's your email</h3>
+      <h3 className='text-lg font-medium mb-2'>What's our Captain's email</h3>
       <input 
       className='bg-[#eeeeee] mb-6 rounded px-4 py-2 border w-full text-lg placeholder:text-lg'
       type="email" 
